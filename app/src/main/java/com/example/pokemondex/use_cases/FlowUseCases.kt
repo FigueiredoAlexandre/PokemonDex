@@ -5,5 +5,5 @@ import kotlinx.coroutines.flow.Flow
 abstract class FlowUseCases<T> {
 
 
-    abstract fun performAction(): Flow<T>
+    abstract fun performAction(queryString: String): Flow<T>
 }
