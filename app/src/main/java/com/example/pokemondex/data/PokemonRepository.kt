@@ -2,5 +2,5 @@ package com.example.pokemondex.data
 
 interface PokemonRepository {
 
-    suspend fun getThePokemonsFromDataSource(): List<PokemonModel>
+    suspend fun getThePokemonsFromDataSource(idStart: Int, idEnd: Int): List<PokemonModel>
 }

@@ -8,8 +8,8 @@ class PokemonRepositoryImp @Inject constructor(
 
 
 
-    override suspend fun getThePokemonsFromDataSource(): List<PokemonModel> {
-         return dataSource.getPokemons()
+    override suspend fun getThePokemonsFromDataSource(idStart: Int, idEnd: Int): List<PokemonModel> {
+         return dataSource.getPokemons(idStart, idEnd)
     }
 
 
