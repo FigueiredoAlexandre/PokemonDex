@@ -5,8 +5,9 @@ import com.example.pokemondex.data.PokemonRepository
 import com.example.pokemondex.data.receive_state.ReceiveState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class GetPokemonsUseCases(
+class GetPokemonsUseCases @Inject constructor(
     val repository: PokemonRepository
 ): FlowUseCases<ReceiveState<List<PokemonModel>>>() {
 
