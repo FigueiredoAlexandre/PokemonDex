@@ -9,7 +9,7 @@ class PokemonRepositoryImp @Inject constructor(
 
 
     override suspend fun getThePokemonsFromDataSource(): List<PokemonModel> {
-        TODO("Not yet implemented")
+         return dataSource.getPokemons()
     }
 
 
