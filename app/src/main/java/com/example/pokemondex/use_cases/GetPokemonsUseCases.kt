@@ -12,7 +12,7 @@ class GetPokemonsUseCases @Inject constructor(
 ): FlowUseCases<ReceiveState<List<PokemonModel>>>() {
 
 
-    override fun performAction(queryString: String, start: Int, end: Int): Flow<ReceiveState<List<PokemonModel>>> {
+    override suspend fun performAction(queryString: String, start: Int, end: Int): Flow<ReceiveState<List<PokemonModel>>> {
         return flow {
             try {
                 emit(ReceiveState.Loading())
