@@ -2,6 +2,6 @@ package com.example.pokemondex.data
 
 interface PokemonDataSource {
 
-    fun getPokemons(): List<PokemonModel>
+    fun getPokemons(idStart: Int, idEnd: Int): List<PokemonModel>
 
 }
