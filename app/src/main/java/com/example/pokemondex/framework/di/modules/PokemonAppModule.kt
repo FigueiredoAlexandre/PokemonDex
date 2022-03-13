@@ -14,7 +14,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object PokemonAppModule {
 
-   
+
 
     @Provides
     @Singleton
