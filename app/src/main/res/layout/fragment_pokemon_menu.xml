@@ -57,6 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:padding="20dp"
+                    android:background="@drawable/background_grey_strokes_for_menu_items"
                     android:layout_weight="1">
 
                     <TextView
@@ -73,6 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:padding="20dp"
+                    android:background="@drawable/background_grey_strokes_for_menu_items"
                     android:layout_weight="1">
 
                     <TextView
