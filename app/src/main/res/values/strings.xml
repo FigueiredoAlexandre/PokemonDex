@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PokemonDex</string>
+    <string name="categories">Categorias</string>
+    <string name="category_two">Categoria 1</string>
+    <string name="category_one">Categoria 1</string>
+    <string name="category_four">Categoria 4</string>
+    <string name="category_three">Categoria 3</string>
 </resources>
