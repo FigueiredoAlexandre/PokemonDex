@@ -8,213 +8,50 @@
     android:background="@color/black"
     android:paddingVertical="20dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/eletric_card_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#171616"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="10dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp">
-
-                <TextView
-                    android:id="@+id/category_eletric_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Categoria:"
-                    android:textColor="@color/white"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/expand_arrow_eletric"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:src="@drawable/ic_baseline_expand_more_24"
-                    app:layout_constraintTop_toTopOf="parent"/>
-
-                <LinearLayout
-                    android:id="@+id/icon_eletric_container"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="20dp"
-                    android:paddingHorizontal="80dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/category_eletric_label">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal">
-
-                        <ImageView
-                            android:id="@+id/eletric_icon"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/pok_mon_electric_type_icon"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"/>
-
-                        <View
-                            android:id="@+id/first_divider"
-                            android:layout_width="1dp"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="20dp"
-                            android:background="@color/divider_grey"
-                            app:layout_constraintBottom_toBottomOf="@+id/eletric_icon"
-                            app:layout_constraintEnd_toStartOf="@+id/eletric_label"
-                            app:layout_constraintStart_toEndOf="@+id/eletric_icon"
-                            app:layout_constraintTop_toTopOf="@+id/eletric_icon" />
-
-                        <TextView
-                            android:id="@+id/eletric_label"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="40dp"
-                            android:padding="10dp"
-                            android:text="@string/eletric"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="@+id/eletric_icon"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/eletric_icon"
-                            app:layout_constraintTop_toTopOf="@+id/first_divider" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-                </LinearLayout>
+        <!-- Eletric -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:orientation="vertical"
-                    android:visibility="gone"
-                    app:layout_constraintTop_toBottomOf="@+id/icon_eletric_container"
-                    tools:layout_editor_absoluteX="20dp" >
+        <!--- Fairy -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
+        <!--- Fighting -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="@string/attack_pros_e_contras"/>
+        <!--- Fire -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
-                   <LinearLayout
-                       android:layout_width="wrap_content"
-                       android:layout_height="match_parent"
-                       android:orientation="horizontal">
+        <!--Flying -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
-                       <ImageView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:src="@drawable/ic_baseline_check_24"/>
+        <!--Ghost -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:paddingHorizontal="10dp"
-                           android:textColor="@color/white"
-                           android:layout_gravity="center_vertical"
-                           android:textSize="10sp"
-                           android:text="Ataques elétricos são efetivos contra pokémons do tipo Water "/>
-
-                   </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_remove_circle_outline_24"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="10dp"
-                            android:textColor="@color/white"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="10sp"
-                            android:text="Ataques elétricos não são efetivos contra pokémons do tipo Ground "/>
-
-                    </LinearLayout>
+        <!-- Grass -->
+        <include
+            android:id="@+id/card_eletric_category"
+            layout="@layout/layout_eletric_category_card"/>
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/white"
-                        android:text="Defense prós e contras:"/>
 
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_check_24"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="10dp"
-                            android:textColor="@color/white"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="10sp"
-                            android:text="Níveis de defesa efetivos contra pokémons do tipo Flying e Steel "/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_remove_circle_outline_24"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="10dp"
-                            android:textColor="@color/white"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="10sp"
-                            android:text="Níveis de defesa não  efetivos contra pokémons do tipo Ground "/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 
 
