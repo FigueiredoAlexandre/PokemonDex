@@ -21,8 +21,8 @@
 
         <!--- Fairy -->
         <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
+            android:id="@+id/card_fairy_category"
+            layout="@layout/layout_fairy_category_card"/>
 
         <!--- Fighting -->
         <include

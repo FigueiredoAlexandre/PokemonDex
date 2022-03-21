@@ -8,4 +8,7 @@
     <string name="eletric">Eletric</string>
     <string name="attack_pros_e_contras">Attack pros e contras:</string>
     <string name="fairy">Fairy</string>
+    <string name="fighting">Fighting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
