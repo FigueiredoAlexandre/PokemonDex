@@ -1,11 +1,10 @@
 package com.example.pokemondex.framework.di.modules
 
-import com.example.pokemondex.data.PokemonDataSource
-import com.example.pokemondex.data.PokemonDataSourceImp
-import com.example.pokemondex.data.PokemonRepository
-import com.example.pokemondex.data.PokemonRepositoryImp
-import com.example.pokemondex.framework.di.component.SingletonComponent
+import com.example.pokemondex.data.*
+import com.example.pokemondex.data.receive_state.ReceiveState
 import com.example.pokemondex.framework.remote.PokemonApi
+import com.example.pokemondex.use_cases.FlowUseCases
+import com.example.pokemondex.use_cases.GetPokemonsUseCases
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +14,7 @@ import javax.inject.Singleton
 
 
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(dagger.hilt.components.SingletonComponent::class)
 object PokemonAppModule {
 
 
@@ -40,5 +39,11 @@ object PokemonAppModule {
     @Singleton
     fun providesPokemonRepository(dataSource: PokemonDataSource): PokemonRepository{
         return PokemonRepositoryImp(dataSource)
+    }
+
+    @Provides
+    @Singleton
+    fun providesGetPokemonsUseCases(repository: PokemonRepository): FlowUseCases<ReceiveState<List<PokemonModel>>>{
+        return GetPokemonsUseCases(repository)
     }
 }

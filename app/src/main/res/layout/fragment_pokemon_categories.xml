@@ -14,40 +14,7 @@
         android:orientation="vertical">
 
 
-        <!-- Eletric -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
 
-        <!--- Fairy -->
-        <include
-            android:id="@+id/card_fairy_category"
-            layout="@layout/layout_fairy_category_card"/>
-
-        <!--- Fighting -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
-
-        <!--- Fire -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
-
-        <!--Flying -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
-
-        <!--Ghost -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
-
-        <!-- Grass -->
-        <include
-            android:id="@+id/card_eletric_category"
-            layout="@layout/layout_eletric_category_card"/>
 
 
 
