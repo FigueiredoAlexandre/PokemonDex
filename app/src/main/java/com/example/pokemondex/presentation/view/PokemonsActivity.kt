@@ -13,7 +13,7 @@ class PokemonsActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
         binding = ActivityPokemonsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
 
     }
 }
